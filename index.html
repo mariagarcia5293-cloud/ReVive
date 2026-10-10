@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ReVive - Transformando Residuos en Oportunidades</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Tailwind Config for Custom Brand Colors -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        revive: {
+                            green: '#10b981', /* Emerald 500 */
+                            darkgreen: '#059669', /* Emerald 600 */
+                            blue: '#2563eb', /* Blue 600 */
+                            lightblue: '#eff6ff', /* Blue 50 */
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .hero-pattern {
+            background-color: #f8fafc;
+            background-image: radial-gradient(#cbd5e1 1px, transparent 1px);
+            background-size: 20px 20px;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800 antialiased">
+
+    <!-- Header / Navigation -->
+    <header class="fixed w-full top-0 z-50 bg-white/90 backdrop-blur-md shadow-sm border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo -->
+                <div class="flex-shrink-0 flex items-center gap-2 cursor-pointer" onclick="window.scrollTo(0,0)">
+                    <div class="w-10 h-10 bg-gradient-to-br from-revive-green to-revive-blue rounded-xl flex items-center justify-center text-white shadow-lg">
+                        <i class="fa-solid fa-leaf text-xl"></i>
+                    </div>
+                    <div>
+                        <h1 class="text-2xl font-bold text-gray-900 tracking-tight">Re<span class="text-revive-green">Vive</span></h1>
+                        <p class="text-[10px] text-gray-500 font-medium uppercase tracking-wider -mt-1">Equipo #4</p>
+                    </div>
+                </div>
+                
+                <!-- Desktop Menu -->
+                <nav class="hidden md:flex space-x-8">
+                    <a href="#inicio" class="text-sm font-medium text-gray-600 hover:text-revive-green transition-colors">Inicio</a>
+                    <a href="#problema" class="text-sm font-medium text-gray-600 hover:text-revive-green transition-colors">Problema</a>
+                    <a href="#solucion" class="text-sm font-medium text-gray-600 hover:text-revive-green transition-colors">Solución</a>
+                    <a href="#impacto" class="text-sm font-medium text-gray-600 hover:text-revive-green transition-colors">Impacto</a>
+                    <a href="#modelo" class="text-sm font-medium text-gray-600 hover:text-revive-green transition-colors">Modelo</a>
+                    <a href="#equipo" class="text-sm font-medium text-gray-600 hover:text-revive-green transition-colors">Equipo</a>
+                </nav>
+
+                <!-- Mobile Menu Button (Visual Only for this demo) -->
+                <div class="md:hidden flex items-center">
+                    <button class="text-gray-500 hover:text-gray-900 focus:outline-none">
+                        <i class="fa-solid fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="pt-32 pb-20 md:pt-40 md:pb-28 hero-pattern relative overflow-hidden">
+        <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full bg-gradient-to-b from-white/50 to-transparent pointer-events-none"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+            <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-green-100 text-green-700 font-medium text-sm mb-6 border border-green-200">
+                <i class="fa-solid fa-recycle"></i> Innovación Circular y Salud
+            </div>
+            <h2 class="text-5xl md:text-6xl font-extrabold text-gray-900 tracking-tight mb-6 leading-tight">
+                Transformando residuos en <br class="hidden md:block"/> 
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-revive-green to-revive-blue">oportunidades</span>
+            </h2>
+            <p class="mt-4 text-xl text-gray-600 max-w-2xl mx-auto mb-10 font-light">
+                Prótesis impresas en 3D a partir de plástico PET reciclado. Una solución ecológica para una salud más digna y accesible.
+            </p>
+            <div class="flex justify-center gap-4">
+                <a href="#solucion" class="px-8 py-4 bg-revive-green hover:bg-revive-darkgreen text-white font-semibold rounded-full shadow-lg shadow-green-500/30 transition-all transform hover:-translate-y-1">
+                    Conoce nuestro proyecto
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- The Problem Section -->
+    <section id="problema" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h3 class="text-3xl font-bold text-gray-900 mb-4">¿Qué problema estamos resolviendo?</h3>
+                <p class="text-gray-600 max-w-2xl mx-auto">Nos enfrentamos a dos grandes crisis globales y locales que requieren una solución unificada y sostenible.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+                <!-- Card 1: Health -->
+                <div class="bg-revive-lightblue rounded-3xl p-8 border border-blue-100 shadow-sm hover:shadow-md transition-shadow">
+                    <div class="w-14 h-14 bg-blue-100 rounded-2xl flex items-center justify-center text-revive-blue mb-6">
+                        <i class="fa-solid fa-staff-snake text-2xl"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-gray-900 mb-3">Inaccesibilidad a la Salud</h4>
+                    <p class="text-gray-600 leading-relaxed">
+                        Las prótesis tradicionales tienen costos prohibitivos. Esto deja a muchas personas que han sufrido la amputación de una extremidad sin la oportunidad de mejorar su movilidad, calidad de vida y acceder a una salud verdaderamente digna.
+                    </p>
+                </div>
+
+                <!-- Card 2: Environment -->
+                <div class="bg-green-50 rounded-3xl p-8 border border-green-100 shadow-sm hover:shadow-md transition-shadow">
+                    <div class="w-14 h-14 bg-green-100 rounded-2xl flex items-center justify-center text-revive-green mb-6">
+                        <i class="fa-solid fa-bottle-water text-2xl"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-gray-900 mb-3">Contaminación por PET</h4>
+                    <p class="text-gray-600 leading-relaxed">
+                        La generación desmedida de residuos plásticos, especialmente el PET, contamina nuestras comunidades y ecosistemas. Gran parte de estos desechos terminan en vertederos u océanos sin integrarse a un ciclo de reutilización efectivo.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- The Solution Section -->
+    <section id="solucion" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h3 class="text-3xl font-bold text-gray-900 mb-4">La Solución ReVive</h3>
+                <p class="text-gray-600 max-w-2xl mx-auto">Un modelo de economía circular donde la basura de unos se convierte en la movilidad de otros.</p>
+            </div>
+
+            <!-- Process Diagram -->
+            <div class="relative mb-20">
+                <!-- Connecting Line (Desktop) -->
+                <div class="hidden md:block absolute top-1/2 left-0 w-full h-1 bg-gradient-to-r from-revive-green to-revive-blue -translate-y-1/2 z-0"></div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-8 relative z-10">
+                    <!-- Step 1 -->
+                    <div class="flex flex-col items-center text-center">
+                        <div class="w-20 h-20 bg-white rounded-full flex items-center justify-center shadow-lg border-4 border-green-100 text-revive-green mb-4">
+                            <i class="fa-solid fa-dumpster text-3xl"></i>
+                        </div>
+                        <h5 class="font-bold text-gray-900">1. Recolección</h5>
+                        <p class="text-sm text-gray-500 mt-2">Recuperación de plástico PET (botellas, envases).</p>
+                    </div>
+                    <!-- Step 2 -->
+                    <div class="flex flex-col items-center text-center">
+                        <div class="w-20 h-20 bg-white rounded-full flex items-center justify-center shadow-lg border-4 border-emerald-200 text-emerald-600 mb-4">
+                            <i class="fa-solid fa-fan text-3xl"></i>
+                        </div>
+                        <h5 class="font-bold text-gray-900">2. Filamento</h5>
+                        <p class="text-sm text-gray-500 mt-2">Máquina fabricadora transforma el PET en filamento.</p>
+                    </div>
+                    <!-- Step 3 -->
+                    <div class="flex flex-col items-center text-center">
+                        <div class="w-20 h-20 bg-white rounded-full flex items-center justify-center shadow-lg border-4 border-blue-200 text-blue-500 mb-4">
+                            <i class="fa-solid fa-cubes text-3xl"></i>
+                        </div>
+                        <h5 class="font-bold text-gray-900">3. Impresión 3D</h5>
+                        <p class="text-sm text-gray-500 mt-2">Manufactura de las piezas con precisión tecnológica.</p>
+                    </div>
+                    <!-- Step 4 -->
+                    <div class="flex flex-col items-center text-center">
+                        <div class="w-20 h-20 bg-white rounded-full flex items-center justify-center shadow-lg border-4 border-blue-300 text-revive-blue mb-4">
+                            <i class="fa-solid fa-hand-holding-medical text-3xl"></i>
+                        </div>
+                        <h5 class="font-bold text-gray-900">4. Prótesis Funcional</h5>
+                        <p class="text-sm text-gray-500 mt-2">Entrega al paciente a una fracción del costo.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Value Proposition -->
+            <div class="bg-white rounded-3xl p-8 md:p-12 shadow-sm border border-gray-100">
+                <h4 class="text-2xl font-bold text-center mb-8">Nuestra Propuesta de Valor</h4>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+                    <div>
+                        <div class="text-revive-green mb-3"><i class="fa-solid fa-piggy-bank text-4xl"></i></div>
+                        <h5 class="font-bold text-lg mb-2">Economía</h5>
+                        <p class="text-gray-600 text-sm">Fabricación de prótesis significativamente más económicas y accesibles para familias vulnerables.</p>
+                    </div>
+                    <div>
+                        <div class="text-emerald-500 mb-3"><i class="fa-solid fa-earth-americas text-4xl"></i></div>
+                        <h5 class="font-bold text-lg mb-2">Ecología</h5>
+                        <p class="text-gray-600 text-sm">Apoyo directo y tangible al medio ambiente mediante la reducción y el reciclaje de plásticos.</p>
+                    </div>
+                    <div>
+                        <div class="text-revive-blue mb-3"><i class="fa-solid fa-heart-pulse text-4xl"></i></div>
+                        <h5 class="font-bold text-lg mb-2">Humanidad</h5>
+                        <p class="text-gray-600 text-sm">Brindamos una salud más digna, autonomía y confianza a quienes más lo necesitan.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Impact & SDGs Section -->
+    <section id="impacto" class="py-20 bg-slate-900 text-white relative overflow-hidden">
+        <!-- Abstract Background Shapes -->
+        <div class="absolute top-0 right-0 w-64 h-64 bg-revive-green rounded-full mix-blend-multiply filter blur-3xl opacity-20 transform translate-x-1/2 -translate-y-1/2"></div>
+        <div class="absolute bottom-0 left-0 w-64 h-64 bg-revive-blue rounded-full mix-blend-multiply filter blur-3xl opacity-20 transform -translate-x-1/2 translate-y-1/2"></div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center mb-16">
+                <h3 class="text-3xl font-bold mb-4">Alineados con los ODS de la ONU</h3>
+                <p class="text-gray-400 max-w-2xl mx-auto">Nuestro proyecto impacta de manera directa en dos Objetivos de Desarrollo Sostenible fundamentales para el futuro global.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <!-- ODS 3 -->
+                <div class="flex items-start gap-6 bg-slate-800/50 p-8 rounded-2xl border border-slate-700 backdrop-blur-sm">
+                    <div class="flex-shrink-0 w-24 h-24 bg-[#4C9F38] rounded-xl flex items-center justify-center p-2">
+                        <!-- Custom styled placeholder for SDG 3 since we can't use external image reliably -->
+                        <div class="text-white text-center font-bold leading-tight">
+                            <span class="text-3xl">3</span><br>
+                            <span class="text-[10px] uppercase">Salud y<br>Bienestar</span>
+                        </div>
+                    </div>
+                    <div>
+                        <h4 class="text-xl font-bold text-white mb-2">Salud y Bienestar</h4>
+                        <p class="text-gray-400 text-sm leading-relaxed">
+                            Garantizamos que las personas con discapacidad física tengan acceso a herramientas de rehabilitación (prótesis) que mejoren su movilidad, independencia y bienestar psicológico.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- ODS 12 -->
+                <div class="flex items-start gap-6 bg-slate-800/50 p-8 rounded-2xl border border-slate-700 backdrop-blur-sm">
+                    <div class="flex-shrink-0 w-24 h-24 bg-[#BF8B2E] rounded-xl flex items-center justify-center p-2">
+                         <!-- Custom styled placeholder for SDG 12 -->
+                         <div class="text-white text-center font-bold leading-tight">
+                            <span class="text-3xl">12</span><br>
+                            <span class="text-[9px] uppercase">Producción y<br>Consumo<br>Responsables</span>
+                        </div>
+                    </div>
+                    <div>
+                        <h4 class="text-xl font-bold text-white mb-2">Producción y Consumo Responsable</h4>
+                        <p class="text-gray-400 text-sm leading-relaxed">
+                            Rompemos el ciclo de basura de un solo uso, dándole una segunda vida útil al plástico PET a través de procesos de manufactura responsable mediante impresión 3D.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Business Model Section -->
+    <section id="modelo" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h3 class="text-3xl font-bold text-gray-900 mb-4">¿Cómo lo hacemos sostenible?</h3>
+                <p class="text-gray-600 max-w-2xl mx-auto">Nuestro modelo de negocios está diseñado para ser escalable, colaborativo y de alto impacto social.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Partners -->
+                <div class="bg-gray-50 rounded-2xl p-8 border border-gray-100">
+                    <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center text-gray-700 shadow-sm mb-6">
+                        <i class="fa-solid fa-handshake"></i>
+                    </div>
+                    <h4 class="text-lg font-bold text-gray-900 mb-4">Socios Clave</h4>
+                    <ul class="space-y-3 text-sm text-gray-600">
+                        <li class="flex items-start gap-2"><i class="fa-solid fa-check text-revive-green mt-1"></i> Empresas productoras de PET (ej. Coca-Cola, Pepsi)</li>
+                        <li class="flex items-start gap-2"><i class="fa-solid fa-check text-revive-green mt-1"></i> Comunidades locales para recolección</li>
+                        <li class="flex items-start gap-2"><i class="fa-solid fa-check text-revive-green mt-1"></i> Stratasys (Proveedor de impresoras 3D)</li>
+                        <li class="flex items-start gap-2"><i class="fa-solid fa-check text-revive-green mt-1"></i> Centros de rehabilitación y Proactible</li>
+                    </ul>
+                </div>
+
+                <!-- Market -->
+                <div class="bg-gray-50 rounded-2xl p-8 border border-gray-100">
+                    <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center text-gray-700 shadow-sm mb-6">
+                        <i class="fa-solid fa-users-viewfinder"></i>
+                    </div>
+                    <h4 class="text-lg font-bold text-gray-900 mb-4">Segmentos de Mercado</h4>
+                    <ul class="space-y-3 text-sm text-gray-600">
+                        <li class="flex items-start gap-2"><i class="fa-solid fa-check text-revive-blue mt-1"></i> Particulares (Personas discapacitadas faltantes de una extremidad)</li>
+                        <li class="flex items-start gap-2"><i class="fa-solid fa-check text-revive-blue mt-1"></i> Hospitales públicos y privados</li>
+                        <li class="flex items-start gap-2"><i class="fa-solid fa-check text-revive-blue mt-1"></i> DIF Jalisco</li>
+                        <li class="flex items-start gap-2"><i class="fa-solid fa-check text-revive-blue mt-1"></i> Fundaciones como Make a Wish</li>
+                    </ul>
+                </div>
+
+                <!-- Revenue -->
+                <div class="bg-gray-50 rounded-2xl p-8 border border-gray-100">
+                    <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center text-gray-700 shadow-sm mb-6">
+                        <i class="fa-solid fa-chart-line"></i>
+                    </div>
+                    <h4 class="text-lg font-bold text-gray-900 mb-4">Vías de Ingreso</h4>
+                    <ul class="space-y-3 text-sm text-gray-600">
+                        <li class="flex items-start gap-2"><i class="fa-solid fa-check text-emerald-500 mt-1"></i> Venta de moldes para prótesis</li>
+                        <li class="flex items-start gap-2"><i class="fa-solid fa-check text-emerald-500 mt-1"></i> Donaciones de ONGs y particulares</li>
+                        <li class="flex items-start gap-2"><i class="fa-solid fa-check text-emerald-500 mt-1"></i> Patrocinios corporativos</li>
+                        <li class="flex items-start gap-2"><i class="fa-solid fa-check text-emerald-500 mt-1"></i> Modelo de mensualidad con reducción de costos</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="equipo" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h3 class="text-3xl font-bold text-gray-900 mb-2">Nuestro Equipo</h3>
+                <p class="text-gray-600">Las mentes detrás de ReVive (Equipo #4)</p>
+            </div>
+
+            <div class="flex flex-wrap justify-center gap-8">
+                <!-- Member 1 -->
+                <div class="w-48 bg-white rounded-2xl p-6 shadow-sm border border-gray-100 text-center hover:-translate-y-1 transition-transform">
+                    <div class="w-20 h-20 mx-auto bg-gray-200 rounded-full mb-4 overflow-hidden border-2 border-revive-green">
+                        <img src="https://placehold.co/100x100/e2e8f0/64748b?text=AG" alt="Abril Garcia" class="w-full h-full object-cover">
+                    </div>
+                    <h5 class="font-bold text-gray-900">Abril Garcia</h5>
+                    <p class="text-xs text-gray-500 mt-1">Co-fundadora</p>
+                </div>
+
+                <!-- Member 2 -->
+                <div class="w-48 bg-white rounded-2xl p-6 shadow-sm border border-gray-100 text-center hover:-translate-y-1 transition-transform">
+                    <div class="w-20 h-20 mx-auto bg-gray-200 rounded-full mb-4 overflow-hidden border-2 border-revive-blue">
+                        <img src="https://placehold.co/100x100/e2e8f0/64748b?text=DL" alt="Derek Lara" class="w-full h-full object-cover">
+                    </div>
+                    <h5 class="font-bold text-gray-900">Derek Lara</h5>
+                    <p class="text-xs text-gray-500 mt-1">Co-fundador</p>
+                </div>
+
+                <!-- Member 3 -->
+                <div class="w-48 bg-white rounded-2xl p-6 shadow-sm border border-gray-100 text-center hover:-translate-y-1 transition-transform">
+                    <div class="w-20 h-20 mx-auto bg-gray-200 rounded-full mb-4 overflow-hidden border-2 border-revive-green">
+                        <img src="https://placehold.co/100x100/e2e8f0/64748b?text=FC" alt="Fabian Camarena" class="w-full h-full object-cover">
+                    </div>
+                    <h5 class="font-bold text-gray-900">Fabian Camarena</h5>
+                    <p class="text-xs text-gray-500 mt-1">Co-fundador</p>
+                </div>
+
+                <!-- Member 4 -->
+                <div class="w-48 bg-white rounded-2xl p-6 shadow-sm border border-gray-100 text-center hover:-translate-y-1 transition-transform">
+                    <div class="w-20 h-20 mx-auto bg-gray-200 rounded-full mb-4 overflow-hidden border-2 border-revive-blue">
+                        <img src="https://placehold.co/100x100/e2e8f0/64748b?text=IG" alt="Ivan Gallegos" class="w-full h-full object-cover">
+                    </div>
+                    <h5 class="font-bold text-gray-900">Ivan Gallegos</h5>
+                    <p class="text-xs text-gray-500 mt-1">Co-fundador</p>
+                </div>
+
+                <!-- Member 5 -->
+                <div class="w-48 bg-white rounded-2xl p-6 shadow-sm border border-gray-100 text-center hover:-translate-y-1 transition-transform">
+                    <div class="w-20 h-20 mx-auto bg-gray-200 rounded-full mb-4 overflow-hidden border-2 border-revive-green">
+                        <img src="https://placehold.co/100x100/e2e8f0/64748b?text=JO" alt="Jose Ortega" class="w-full h-full object-cover">
+                    </div>
+                    <h5 class="font-bold text-gray-900">Jose Ortega</h5>
+                    <p class="text-xs text-gray-500 mt-1">Co-fundador</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-slate-300 py-12 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Brand Info -->
+                <div>
+                    <div class="flex items-center gap-2 mb-4">
+                        <div class="w-8 h-8 bg-gradient-to-br from-revive-green to-revive-blue rounded-lg flex items-center justify-center text-white">
+                            <i class="fa-solid fa-leaf text-sm"></i>
+                        </div>
+                        <h2 class="text-xl font-bold text-white tracking-tight">Re<span class="text-revive-green">Vive</span></h2>
+                    </div>
+                    <p class="text-sm text-slate-400 mb-4">
+                        Transformando residuos en oportunidades. Prótesis accesibles para una salud más digna.
+                    </p>
+                </div>
+
+                <!-- Contact -->
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Contacto</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><i class="fa-solid fa-envelope w-5 text-revive-green"></i> hola@revive-equipo4.mx</li>
+                        <li><i class="fa-solid fa-phone w-5 text-revive-green"></i> +52 (33) 1234 5678</li>
+                        <li><i class="fa-solid fa-location-dot w-5 text-revive-green"></i> Entregas en sitio y bodega, Jalisco.</li>
+                    </ul>
+                </div>
+
+                <!-- Social & Legal -->
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Síguenos</h4>
+                    <div class="flex gap-4 mb-6">
+                        <a href="#" class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-revive-blue transition-colors text-white">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-revive-blue transition-colors text-white">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-revive-blue transition-colors text-white">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-slate-800 mt-12 pt-8 text-center text-sm text-slate-500">
+                <p>&copy; 2026 ReVive (Equipo #4). Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
